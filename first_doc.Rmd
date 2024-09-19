@@ -1,8 +1,8 @@
 ---
-title: "first_doc"
+title: "My first version-controlled project - after modification 1"
 author: "pawel273"
-date: "2024-09-18"
-output: html_document
+date: "2024-09-19"
+output: pdf_document
 ---
 
 ```{r setup, include=FALSE}
@@ -13,6 +13,13 @@ My *first* version-controlled project in RStudio
 A plot:
 
 ```{r test_plot}
-plot(cars)
+plot(cars, col = "red", xlab = "speed (mph)", ylab = "distance (miles)")
+```
+
+A summary of the data frame is given below:
+  
+```{r, cars-summary}
+library(knitr)
+kable(summary(cars))
 ```
 
